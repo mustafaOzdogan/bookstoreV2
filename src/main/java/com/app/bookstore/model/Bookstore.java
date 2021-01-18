@@ -1,5 +1,6 @@
 package com.app.bookstore.model;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,7 +15,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@NoArgsConstructor
+@Builder
 @Entity
 public class Bookstore implements Serializable
 {

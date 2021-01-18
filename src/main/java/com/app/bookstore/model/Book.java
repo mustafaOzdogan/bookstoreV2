@@ -1,9 +1,6 @@
 package com.app.bookstore.model;
 
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.Getter;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,8 +10,8 @@ import java.io.Serializable;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @EqualsAndHashCode
+@Builder
 @Entity
 public class Book implements Serializable
 {
