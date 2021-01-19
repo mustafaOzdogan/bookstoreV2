@@ -44,4 +44,9 @@ public class BookServiceImpl implements BookService
 
     @Override
     public List<Book> getBooksByBookstoreId(Long id) throws Exception { return bookRepository.findBooksByBookstoreId(id); }
+
+    public void removeAllBooks() { bookRepository.deleteAll(); }
+
+    @Override
+    public void persist(Book book) { bookRepository.saveAndFlush(book); }
 }

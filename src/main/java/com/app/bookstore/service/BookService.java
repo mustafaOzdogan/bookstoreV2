@@ -13,4 +13,6 @@ public interface BookService
     List<Book> getAllBooks();
     List<Book> getBooksByCategoryId(Long categoryId);
     List<Book> getBooksByBookstoreId(Long bookstoreId) throws Exception;
+    void removeAllBooks();
+    void persist(Book book);
 }

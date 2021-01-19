@@ -1,9 +1,6 @@
 package com.app.bookstore.model;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,6 +10,7 @@ import java.io.Serializable;
 
 @Getter
 @Setter
+@AllArgsConstructor
 @Builder
 @Entity
 public class Category implements Serializable
@@ -22,4 +20,5 @@ public class Category implements Serializable
     private long id;
     private String name;
 
+    public Category() {}
 }

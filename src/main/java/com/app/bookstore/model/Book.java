@@ -11,6 +11,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @EqualsAndHashCode
+@AllArgsConstructor
 @Builder
 @Entity
 public class Book implements Serializable
@@ -20,4 +21,6 @@ public class Book implements Serializable
     private long id;
     private String name;
     private long categoryId;
+
+    public Book() {}
 }
