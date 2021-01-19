@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/docker-spring-boot-bookstore.jar docker-spring-boot-bookstore.jar
+EXPOSE 9091
+ENTRYPOINT ["java", "-jar", "docker-spring-boot-bookstore.jar"]
